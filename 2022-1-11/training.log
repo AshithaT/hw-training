@@ -1,0 +1,85 @@
+sudo command in Linux
+  sudo (Super User DO) command in Linux is generally used as a prefix of some command that only superuser are allowed to run.
+  -V: The -V (version) 
+  -l: The -l (list) 
+
+ python install
+  sudo apt install python3-pip
+
+ creating virtual environment
+
+  python3 -m pip install --user virtualenv
+
+ WARNING: The script virtualenv is installed in '/home/ashi/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+Successfully installed distlib-0.3.4 filelock-3.4.2 platformdirs-2.4.1 virtualenv-20.13.0
+
+virtual environment creation
+
+sudo  apt-get install python3.8-dev python3.8-venv
+python3 -m venv env
+source env/bin/activate
+
+grep commands
+
+grep [options] pattern [files]
+
+		-c : This prints only a count of the lines that match a pattern
+		-h : Display the matched lines, but do not display the filenames.
+		-i : Ignores, case for matching
+		-l : Displays list of a filenames only.
+		-n : Display the matched lines and their line numbers.
+		-v : This prints out all the lines that do not matches the pattern
+		-e exp : Specifies expression with this option. Can use multiple times.
+		-f file : Takes patterns from file, one per line.
+		-E : Treats pattern as an extended regular expression (ERE)
+		-w : Match whole word
+		-o : Print only the matched parts of a matching line,
+		 with each such part on a separate output line.
+
+		-A n : Prints searched line and nlines after the result.
+		-B n : Prints searched line and n line before the result.
+		-C n : Prints searched line and n lines after before the result.
+
+sudo commands
+
+		sudo - execute a command as another user
+
+usage: sudo -h | -K | -k | -V
+usage: sudo -v [-AknS] [-g group] [-h host] [-p prompt] [-u user]
+usage: sudo -l [-AknS] [-g group] [-h host] [-p prompt] [-U user] [-u user] [command]
+usage: sudo [-AbEHknPS] [-r role] [-t type] [-C num] [-g group] [-h host] [-p prompt] [-T timeout] [-u user]
+            [VAR=value] [-i|-s] [<command>]
+usage: sudo -e [-AknS] [-r role] [-t type] [-C num] [-g group] [-h host] [-p prompt] [-T timeout] [-u user] file ...
+
+Options:
+  -A, --askpass                 use a helper program for password prompting
+  -b, --background              run command in the background
+  -B, --bell                    ring bell when prompting
+  -C, --close-from=num          close all file descriptors >= num
+  -E, --preserve-env            preserve user environment when running command
+      --preserve-env=list       preserve specific environment variables
+  -e, --edit                    edit files instead of running a command
+  -g, --group=group             run command as the specified group name or ID
+  -H, --set-home                set HOME variable to target user's home dir
+  -h, --help                    display help message and exit
+  -h, --host=host               run command on host (if supported by plugin)
+  -i, --login                   run login shell as the target user; a command may also be specified
+  -K, --remove-timestamp        remove timestamp file completely
+  -k, --reset-timestamp         invalidate timestamp file
+  -l, --list                    list user's privileges or check a specific command; use twice for longer format
+  -n, --non-interactive         non-interactive mode, no prompts are used
+  -P, --preserve-groups         preserve group vector instead of setting to target's
+  -p, --prompt=prompt           use the specified password prompt
+  -r, --role=role               create SELinux security context with specified role
+  -S, --stdin                   read password from standard input
+  -s, --shell                   run shell as the target user; a command may also be specified
+  -t, --type=type               create SELinux security context with specified type
+  -T, --command-timeout=timeout terminate command after the specified time limit
+  -U, --other-user=user         in list mode, display privileges for user
+  -u, --user=user               run command (or edit file) as specified user name or ID
+  -V, --version                 display version information and exit
+  -v, --validate                update user's timestamp without running a command
+  --                            stop processing command line arguments
+  
+  
