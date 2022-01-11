@@ -1,4 +1,14 @@
 morning meetting conducted
+topics to study
+  [Basic commands
+  Package Installers
+    apt
+    pip
+  Terminal text editor 
+    nano
+    Vim
+  IDE - Sublime text
+  Virtual environment]
 
 sudo command in Linux
   sudo (Super User DO) command in Linux is generally used as a prefix of some command that only superuser are allowed to run.
