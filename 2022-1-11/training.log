@@ -136,3 +136,5 @@ Create a python 3 virtual environment and install scrapy
 git commands
 
 Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
+
+git config --global user.name "Ashitha"
