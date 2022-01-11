@@ -105,3 +105,28 @@ Install/uninstall scrapy using pip
 Edit and save a file using nano
 Install sublime text
 Create a python 3 virtual environment and install scrapy
+
+
+Install/uninstall scrapy using apt
+  
+
+	sudo apt-get update
+	sudo apt-get install python3-scrapy
+
+  sudo apt-get remove  python-scrapy
+
+Install/uninstall scrapy using pip
+
+   pip install Scrapy
+
+Edit and save a file using nano
+
+  nano <filename>
+
+Create a python 3 virtual environment and install scrapy
+
+  sudo  apt-get install python3.8-dev python3.8-venv
+  python3 -m venv env
+  source env/bin/activate
+
+  sudo apt-get install python3-scrapy
