@@ -91,7 +91,17 @@ Options:
   -U, --other-user=user         in list mode, display privileges for user
   -u, --user=user               run command (or edit file) as specified user name or ID
   -V, --version                 display version information and exit
-  -v, --validate                update user's timestamp without running a command
+  -v, -Install/uninstall scrapy using apt
+Install/uninstall scrapy using pip
+Edit and save a file using nano
+Install sublime text
+Create a python 3 virtual environment and install scrapy-validate                update user's timestamp without running a command
   --                            stop processing command line arguments
   
+  Next task
   
+  Install/uninstall scrapy using apt
+Install/uninstall scrapy using pip
+Edit and save a file using nano
+Install sublime text
+Create a python 3 virtual environment and install scrapy
