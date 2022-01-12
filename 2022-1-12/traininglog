@@ -28,7 +28,9 @@ git commands
 
 	git push -      git push
 
-	git diff -      git diff
+	git version -   git --version
+
+	git diff -      show changes between commits ,commits and working tree
 
 	git status -    git status
 	
@@ -36,7 +38,7 @@ git commands
 	
 	git pull -      git pull
 
-	git rebase -    git rebase
+	git rebase -    reapply commits on top of another base tip
 	
 	git revert -   if faulty commit occurs this command can be used
 	
@@ -46,3 +48,8 @@ git commands
    
     delete branch- git branch -d <branch name>
 
+    git stash  -   save changes made when they’re not in a state to commit them to a repository
+    
+    toclear stash- git stash clear
+   
+   https://www.w3schools.com/git/
