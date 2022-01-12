@@ -40,7 +40,9 @@ git commands
 
 	git rebase -    reapply commits on top of another base tip
 	
-	git revert -   if faulty commit occurs this command can be used
+	git revert -    Revert some existing commits
+	                git revert [--[no-]edit] [-n] [-m parent-number] [-s] [-S[<keyid>]] <commit>…​
+                    git revert (--continue | --skip | --abort | --quit)
 	
 	git checkout-  git checkout -b <branch name>
 
@@ -59,5 +61,81 @@ git commands
    
     git-rm -       Remove files from the working tree and from the index
     			   git rm [-f | --force] [-n] [-r] [--cached] [--ignore-unmatch]
-	  [--quiet] [--pathspec-from-file=<file> [--pathspec-file-nul]]
-	  [--] [<pathspec>…​]
+	               [--quiet] [--pathspec-from-file=<file> [--pathspec-file-nul]]
+	               [--] [<pathspec>…​]
+
+	git fetch -   git-fetch - Download objects and refs from another repository
+
+                  git fetch [<options>] [<repository> [<refspec>…​]]
+
+    git remote -  Manage set of tracked repositories
+                  git remote -v
+
+    git-show -    Show various types of objects
+                  git show [<options>] [<object>…​]
+
+    git-apply -   Apply a patch to files and/or to the index
+                  git apply [--stat] [--numstat] [--summary] [--check] [--index | --intent-to-add] [--3way]
+
+    git-grep -    Print lines matching a pattern
+                  git grep [-a | --text] [-I] [--textconv] [-i | --ignore-case] [-w | --word-regexp]
+
+    git-cat-file - Provide content or type and size information for repository objects
+
+    git clean  -   Remove untracked files from the working tree
+
+    git-daemon -   A really simple server for Git repositories
+
+
+    next topic 
+
+    oop -Object Oriented Programming
+
+    	Object Oriented programming (OOP) is a programming paradigm that relies on the concept of classes and objects.
+
+    	A class is an abstract used to create objects.
+
+    	Classes can also contain functions, called methods available only to objects of that type. These functions are defined within the class and perform some action helpful to that specific type of object.
+
+    	Reusable, OOP objects can be used across programs
+
+    	Access Modifier: Defines access type of the method i.e. from where it can be accessed in your application.
+
+    	Building blocks of OOP
+
+
+    	classes
+
+    		classes are essentially user defined data types.A class is a collection of objects. Classes are where we create a blueprint for the structure of methods and attributes. Individual objects are instantiated, or created from this blueprint.It is a logical entity that contains some attributes and methods. 
+
+    		Classes are created by keyword class.
+            Attributes are the variables that belong to a class.
+            Attributes are always public and can be accessed using the dot (.) operator. Eg.: Myclass.Myattribute
+
+    	objects 
+            
+            Objects are instances of classes created with specific data
+
+    	methods 
+
+    		Methods represent behaviors. Methods perform actions; methods might return information about an object, or update an object’s data. The method’s code is defined in the class definition.
+    	
+    	attribute
+
+    		The state of an object is defined by the data in the object’s attributes fields. 
+
+    oop concepts
+    
+    Inheritance
+
+			Inheritance is the capability of one class to derive or inherit the properties from another class. The class that derives properties is called the derived class or base class.the class from which the properties are being derived is called the base class or parent class. 
+   
+
+    Polymorphism
+
+			Polymorphism simply means having many forms.
+
+
+	Encapsulation
+
+	        It describes the idea of wrapping data and the methods that work on data within one unit. This puts restrictions on accessing variables and methods directly and can prevent the accidental modification of data. 
