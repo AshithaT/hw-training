@@ -49,7 +49,15 @@ git commands
     delete branch- git branch -d <branch name>
 
     git stash  -   save changes made when they’re not in a state to commit them to a repository
+                   git stash list [<log-options>]
     
     toclear stash- git stash clear
+
+    Amend       -  One of the simplest things you can do with --amend is to change a commit message.
+
+    git-mv -       Move or rename a file, a directory, or a symlink
    
-   https://www.w3schools.com/git/
+    git-rm -       Remove files from the working tree and from the index
+    			   git rm [-f | --force] [-n] [-r] [--cached] [--ignore-unmatch]
+	  [--quiet] [--pathspec-from-file=<file> [--pathspec-file-nul]]
+	  [--] [<pathspec>…​]
