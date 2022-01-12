@@ -6,3 +6,14 @@ ssh-keygen
 
 cat .ssh/id_rsa.pub 
 git clone git@github.com:AshithaT/hw-training.git
+
+
+git commands
+
+git configure
+git add .
+git commit -m "message"
+git push
+git status
+git log
+git pull
