@@ -1,0 +1,6 @@
+git ssh key generation
+
+ssh-keygen
+
+cat .ssh/id_rsa.pub 
+git clone git@github.com:AshithaT/hw-training.git
