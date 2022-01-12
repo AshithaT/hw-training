@@ -8,12 +8,41 @@ cat .ssh/id_rsa.pub
 git clone git@github.com:AshithaT/hw-training.git
 
 
-git commands
+git
 
-git configure
-git add .
-git commit -m "message"
-git push
-git status
-git log
-git pull
+	Version control (sometimes referred to as source control) plays an important role in any development project, including test automation. 
+
+git commands 
+
+	git clone -     git clone <repository url>
+
+	git configure-	git config --global user.name "Sam Smith"
+					git config --global user.email sam@example.com
+
+	git init -      git init <repository name>
+
+	git add .  -    git add .
+	                git add <file path>
+
+	git commit -    git commit -m "<commit message>"
+
+	git push -      git push
+
+	git diff -      git diff
+
+	git status -    git status
+	
+	git log -       git log
+	
+	git pull -      git pull
+
+	git rebase -    git rebase
+	
+	git revert -   if faulty commit occurs this command can be used
+	
+	git checkout-  git checkout -b <branch name>
+
+	git branch -   git branch <new branch>
+   
+    delete branch- git branch -d <branch name>
+
