@@ -26,12 +26,12 @@ none -The None keyword is used to define a null variable or an object.
 
 Basic operations
 
-Arithmetic operators
-comparison operators
-Logical Operators
-Bitwise Operators
-Assignment Operators
-Identity Operators
+Arithmetic operators - +,-,*,/
+comparison operators- True or False ,> < == !=
+Logical Operators - AND OR NOT
+Bitwise Operators - & | ~ >> <<
+Assignment Operators - = += assigning value to variables
+Identity Operators - is isnot
 
 If else - The if…elif…else statement is used in Python for decision making.
 
@@ -62,9 +62,13 @@ Break Statement: It brings control out of the loop
 
 Pass Statement: We use pass statement to write empty loops. Pass is also used for empty control statement, function and classes.
 
-Function
+Function -In Python a function is defined using the def keyword:
 
-Class
+   Example
+      def my_function():
+         print("Hello from a function")
+
+Class - Each class instance can have attributes attached to it for maintaining its state.
 Object
 
 OOP concepts
@@ -74,4 +78,23 @@ self argument -self is parameter in Instance Method and user can use another par
 
 Constructor, destructor
 
+    The task of constructors is to initialize and assign values to the data members of the class when an object of the class is created. 
+
+     In Python, destructors are not needed, because Python has a garbage collector that handles memory management automatically. 
+
 File operations
+
+f = open(filename, mode)
+Where the following mode is supported:
+
+r: open an existing file for a read operation.
+
+w: open an existing file for a write operation. If the file already contains some data then it will be overridden.
+
+a:  open an existing file for append operation. It won’t override existing data.
+
+r+:  To read and write data into the file. The previous data in the file will not be deleted.
+
+w+: To write and read data. It will override existing data.
+
+a+: To append and read data from the file. It won’t override existing data.
