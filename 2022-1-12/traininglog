@@ -115,6 +115,7 @@ git commands
     	objects 
             
             Objects are instances of classes created with specific data
+             
 
     	methods 
 
@@ -126,12 +127,12 @@ git commands
 
     oop concepts
     
-    Inheritance
+  Inheritance
 
-			Inheritance is the capability of one class to derive or inherit the properties from another class. The class that derives properties is called the derived class or base class.the class from which the properties are being derived is called the base class or parent class. 
+			Inheritance is the capability of one class to derive or inherit the properties from another class. base class and parent class. 
    
 
-    Polymorphism
+  Polymorphism
 
 			Polymorphism simply means having many forms.
 

@@ -1,3 +1,14 @@
+continueing topic - oop concepts
+class
+class Dog:
+    pass
+
+Object
+
+obj = Dog()
+
+
+
 Data hiding 
 
 	In Python, we use double underscore (Or __) before the attributes name and those attributes will not be directly visible outside. 
@@ -7,12 +18,15 @@ One of the major advantages of Object Oriented Programming is re-use.
 Class Method
 The @classmethod decorator is a built-in function decorator that is an expression that gets evaluated after your function is defined. 
 
+	class Dog:
+    	pass
+
 Static Method
 A static method does not receive an implicit first argument. 
 
 To define a class method in python, we use @classmethod decorator, and to define a static method we use @staticmethod decorator. 
 
-Python Functions is a block of related statements designed to perform a computational, logical, or evaluative task. The idea is to put some commonly or repeatedly done tasks together and make a function so that instead of writing the same code again and again for different inputsfunctions
+Python Functions is a block of related statements designed to perform a computational, logical, or evaluative task. 
 
 	def function_name(parameters):
     	"""docstring"""
@@ -43,3 +57,97 @@ Functional Programming in Python
  Recursion: There are no “for” or “while” loop in functional languages. Iteration in functional languages is implemented through recursion.
 
  Variables are Immutable: In functional programming, we can’t modify a variable after it’s been initialized. We can create new variables – but we can’t modify existing variables.
+
+
+ Lambda functions: In Python, anonymous function means that a function is without a name. 
+ 	lambda arguments: expression
+
+ yield -If the body of a def contains yield, the function automatically becomes a generator function.
+
+ Next topic
+
+ Indentation - space, tab
+
+ Indentation is the leading whitespace ( spaces and tabs ) before any statement in python.
+
+Data types
+
+Data types are the classification or categorization of data items.
+Following are the standard or built-in data type of Python:
+
+Numeric - int float ,complex
+Sequence Type -string ,
+list,
+tuple - tuples cannot be modified after it is created. 
+
+Boolean - Data type with one of the two built-in values, True or False. 
+
+Set - Sets can be created by using the built-in set() function with an iterable object or a sequence by placing the sequence inside curly braces, separated by ‘comma’. 
+
+Dictionary -Sets can be created by using the built-in set() function with an iterable object or a sequence by placing the sequence inside curly braces, separated by ‘comma’. 
+       holds only single value as elements.
+
+
+none -The None keyword is used to define a null variable or an object.
+
+Basic operations
+
+Arithmetic operators
+comparison operators
+Logical Operators
+Bitwise Operators
+Assignment Operators
+Identity Operators
+
+If else - The if…elif…else statement is used in Python for decision making.
+
+		if test expression:
+           Body of if
+        elif test expression:
+           Body of elif
+        else: 
+           Body of else
+Loops
+
+while loop
+
+	while expression:
+    statement(s)
+
+for in Loop
+   for iterator_var in sequence:
+    statements(s)
+
+Nested Loops
+	for iterator_var in sequence:
+    for iterator_var in sequence:
+        statements(s)
+        statements(s)
+
+Break Statement: It brings control out of the loop
+
+Pass Statement: We use pass statement to write empty loops. Pass is also used for empty control statement, function and classes.
+
+Function
+
+Class
+Object
+
+OOP concepts
+
+self argument -self is parameter in Instance Method and user can use another parameter name in place of it. 
+	“self” keyword we can access the attributes and methods of the class in python. It binds the attributes with the given arguments.
+
+Constructor, destructor
+
+File operations
+
+
+
+
+
+
+
+
+
+
