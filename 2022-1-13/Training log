@@ -1,0 +1,45 @@
+Data hiding 
+
+	In Python, we use double underscore (Or __) before the attributes name and those attributes will not be directly visible outside. 
+
+One of the major advantages of Object Oriented Programming is re-use.
+
+Class Method
+The @classmethod decorator is a built-in function decorator that is an expression that gets evaluated after your function is defined. 
+
+Static Method
+A static method does not receive an implicit first argument. 
+
+To define a class method in python, we use @classmethod decorator, and to define a static method we use @staticmethod decorator. 
+
+Python Functions is a block of related statements designed to perform a computational, logical, or evaluative task. The idea is to put some commonly or repeatedly done tasks together and make a function so that instead of writing the same code again and again for different inputsfunctions
+
+	def function_name(parameters):
+    	"""docstring"""
+    	statement(s)
+   	    return expression
+
+ We can create a  Python function using the def keyword.
+
+ Types of Arguments
+
+ A default argument is a parameter that assumes a default value if a value is not provided in the function call for that argument.
+
+ Variable-length arguments
+	In Python, we can pass a variable number of arguments to a function using special symbols. There are two special symbols:
+
+	*args (Non-Keyword Arguments)
+	**kwargs (Keyword Arguments)
+
+
+Functional Programming in Python
+
+ It uses expressions instead of statements. An expression is evaluated to produce a value whereas a statement is executed to assign variables.
+
+ Concepts of Functional Programming
+
+ Pure Functions:they always produce the same output for the same arguments irrespective of anything else. 
+
+ Recursion: There are no “for” or “while” loop in functional languages. Iteration in functional languages is implemented through recursion.
+
+ Variables are Immutable: In functional programming, we can’t modify a variable after it’s been initialized. We can create new variables – but we can’t modify existing variables.
