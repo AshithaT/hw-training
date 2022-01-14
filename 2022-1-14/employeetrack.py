@@ -29,12 +29,13 @@ class employeetrack:
                         { "task 1 details" },
                         { "task 2 details"},
                         { "task 3 details" }]}
+                        
 data = [{"emp_id": 1, "emp_name": "Ashitha", "date":"14-1-22" ,"login_time":"9:00","log_out":"6:00"},
         {"emp_id": 2, "emp_name": "Renin", "date":"14-1-22","login_time":"9:00","log_out":"6:00"}]
  
 with open("filename.json", "w") as write_file:
     json.dump(data, write_file)
-    
+
 f = open('filename.json')
 data = json.load(f)
 for i in data [0]:
