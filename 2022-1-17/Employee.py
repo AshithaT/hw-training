@@ -21,7 +21,6 @@ class Employee:
         return task_success
 
      def start_time(self):
-         
         return datetime.now().strftime("%Y-%m-%d %H:%M")
 
      def end_time(self):
