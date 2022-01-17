@@ -7,7 +7,7 @@ class employeetrack:
       self.emp_id=emp_id
       self.emp_name=emp_name
       self.date=date
-      self.logintime=login_time
+      self.login_time=login_time
       self.logout_time=logout_time
       employeetrack.count+=1
 
