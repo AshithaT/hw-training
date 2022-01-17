@@ -8,15 +8,18 @@ class employeetrack:
       self.emp_name=emp_name
       self.date=date
       self.logintime=login_time
-      self.logoutime=logoutime
+      self.logout_time=logout_time
       employeetrack.count+=1
 
   def time():
     today = date.today()
     print("Today's date:", today)
 
+
+    
   def displayCount(self):
       print("The number of employees in the organization are: ", self.count)
+
   def logtask(self):
       data={
                
