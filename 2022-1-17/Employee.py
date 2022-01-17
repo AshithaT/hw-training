@@ -23,12 +23,12 @@ class Employee:
      def start_time(self):
         return datetime.now().strftime("%Y-%m-%d %H:%M")
 
-     def end_time(self):
-         return datetime.now().strftime("%Y-%m-%d %H:%M")
+     # def end_time(self):
+     #     return datetime.now().strftime("%Y-%m-%d %H:%M")
 
 def main():
 
-    emp_id=int(input("Enter the id \n"))
+    emp_id=int(input(s"Enter the id \n"))
     emp_name=input("Enter the name \n")
     emp_detail=Employee(emp_name,emp_id)
     login_time=emp_detail.login_time()
@@ -49,7 +49,7 @@ def main():
 
 
 def taskdetail(emp_name,emp_id):
-    while True:
+    # while True:
 
         emp_detail=Employee(emp_name,emp_id)
         task_t1=input("Enter the task title \n")
@@ -65,11 +65,11 @@ def taskdetail(emp_name,emp_id):
         'task_status':emp_detail.end_task(task_status)
         }
         task1.append(task)
-        val=input("Enter a new task?(yes/no) \n")
-        if val!="yes":
-            break
+        # val=input("Enter a new task?(yes/no) \n")
+        # if val!="yes":
+        #     break
 
-    return task1
+        return task1
 
 
 
