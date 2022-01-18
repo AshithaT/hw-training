@@ -1,0 +1,62 @@
+python request crawling
+
+	Requests is an elegant and simple HTTP library for Python, built for human beings.
+
+Installation
+
+$ python -m pip install requests
+
+$ git clone git://github.com/psf/requests.git
+
+$ cd requests
+
+$ python -m pip install .
+
+starting python requests
+HTTP request types: PUT, DELETE, HEAD and OPTIONS
+
+>>> import requests
+>>> r = requests.get('https://api.github.com/events')
+>>> r = requests.post('https://httpbin.org/post', data={'key': 'value'})
+>>> r = requests.put('https://httpbin.org/put', data={'key': 'value'})
+>>> r = requests.delete('https://httpbin.org/delete')
+>>> r = requests.head('https://httpbin.org/get')
+>>> r = requests.options('https://httpbin.org/get')
+
+Requests allows you to provide these arguments as a dictionary of strings, using the params keyword argument,if you wanted to pass 
+key1=value1 and key2=value2 to httpbin.org/get.Making a request-
+
+>>> payload = {'key1': 'value1', 'key2': 'value2'}
+>>> r = requests.get('https://httpbin.org/get', params=payload)
+>>> print(r.url)
+https://httpbin.org/get?key1=value1&key2=value2
+
+can also pass a list of items as a value:Passing Parameters in URL's
+
+>>> payload = {'key1': 'value1', 'key2': ['value2', 'value3']}
+>>>r = requests.get('https://httpbin.org/get', params=payload)
+>>>print(r.url)
+https://httpbin.org/get?key1=value1&key2=value2&key2=value3
+
+content of the server’s response:response Content-
+
+>>> import requests
+>>> r = requests.get('https://api.github.com/events')
+>>> r.text
+
+ response body as bytes, for non-text requests:Binary Response Content-
+
+ >>> r.content
+
+builtin JSON decoder, in case you’re dealing with JSON data:JSON Response Content-
+
+>>> import requests
+>>> r = requests.get('https://api.github.com/events')
+>>> r.json()
+
+
+Raw Response Content: -
+
+
+
+

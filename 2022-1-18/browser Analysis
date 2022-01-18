@@ -1,0 +1,73 @@
+Browser Analysis
+
+Task 4 - Browser inspect
+	Open the URL below in the browser. Inspect and find out the following attributes.
+	URL:https://www.flipkart.com/audio-video/~cs-53mrbtcuf5/pr?sid=0pm&collection-tab-name=Audio+And+Video&p%5B%5D=facets.fulfilled_by%255B%255D%3DFlipkart%2BAssured&p%5B%5D=facets.availability%255B%255D%3DExclude%2BOut%2Bof%2BStock&p%5B%5D=facets.rating%255B%255D%3D4%25E2%2598%2585%2B%2526%2Babove&fm=neo%2Fmerchandising&iid=M_d565fbf6-0263-4fce-b0b8-48e083237d0e_1_372UD5BXDFYS_MC.9JGNW7M0TUHD&otracker=hp_rich_navigation_1_1.navigationCard.RICH_NAVIGATION_Electronics~Audio~All_9JGNW7M0TUHD&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_1_L2_view-all&cid=9JGNW7M0TUHD
+
+
+	Find the following:
+
+Data loading ajax URL 
+ 	Request URL: https://www.flipkart.com/audio-video/~cs-53mrbtcuf5/pr?sid=0pm&collection-tab-name=Audio+And+Video&p%5B%5D=facets.fulfilled_by%255B%255D%3DFlipkart%2BAssured&p%5B%5D=facets.availability%255B%255D%3DExclude%2BOut%2Bof%2BStock&p%5B%5D=facets.rating%255B%255D%3D4%25E2%2598%2585%2B%2526%2Babove&fm=neo%2Fmerchandising&iid=M_d565fbf6-0263-4fce-b0b8-48e083237d0e_1_372UD5BXDFYS_MC.9JGNW7M0TUHD&otracker=hp_rich_navigation_1_1.navigationCard.RICH_NAVIGATION_Electronics~Audio~All_9JGNW7M0TUHD&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_1_L2_view-all&cid=9JGNW7M0TUHD
+
+Request Headers
+
+	Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-GB,en-US;q=0.9,en;q=0.8
+Cache-Control: max-age=0
+Connection: keep-alive
+Cookie: Network-Type=4g; Network-Type=4g; T=TI164250497879600186547406138754094970470962692633918741961483690522; pxcts=ff2def40-7850-11ec-8781-b7b2cfa109ff; _pxvid=ff2d8c1f-7850-11ec-82a5-704541487750; AMCVS_17EB401053DAF4840A490D4C%40AdobeOrg=1; AMCV_17EB401053DAF4840A490D4C%40AdobeOrg=-227196251%7CMCIDTS%7C19011%7CMCMID%7C59188269601281239681017202618544813815%7CMCAAMLH-1643109781%7C12%7CMCAAMB-1643109781%7CRKhpRz8krg2tLO6pguXWp5olkAcUniQYPHaMWWgdJ3xzPWQmdj0y%7CMCOPTOUT-1642512181s%7CNONE%7CMCAID%7CNONE; s_sq=flipkart-prd%3D%2526pid%253Dwww.flipkart.com%25253Aaudio-video%25253A%25257Ecs-53mrbtcuf5%25253Apr%2526pidt%253D1%2526oid%253Dhttps%25253A%25252F%25252Fwww.flipkart.com%25252Faudio-video%25252Fpr%25253Fsid%25253D0pm%252526p%25255B%25255D%25253Dfacets.fulfilled_by%252525255B%252525255D%2525253DFlipkart%2525252BAssur%2526ot%253DA; SN=VID3BEF834E4BB46AF880D8E45AB7005AF.TOK9810E0E4D1C84F25879B06B8680D7042.1642507515.LO; S=d1t17Az9UPz8/Pw8WPz8kPz8/P5jL3042sUf84UOwIzHTVnjNwb2fSLUN2W6qiMYNWqXp1Vaa5t1SZvKtlcStiTr6Iw==; _px3=8842bedc39aa9c7d83f56c22227a0f1428758b59e070369544e88bee72f4fc75:O2xZfJUkanyDeRhprrudYZr20onp2eM/gXgaG6uoMsEFuq8XiqbV7evvxpgG5zm0ULGGtGUxCiPq4QPKcl8rYw==:1000:dTOIJQaMHo8rxqvmx3/3c85CXhtreO5kVXweFft++nF2gS5epdhTCN7PFmdghM3P7SmMRBg3FQRqzdgNo8ZiM/qc3UB2tZDnm+C2lbqNbd6aL2BMnouS77Dswg+LSYcykvbHS65Cnf35xSRs1sqURQ+bLiyJAZB8YreBoLm7cF+KnAD95bQCfmMOdhMpZ8POBl77DprTzSkJbeASM7Vo6A==
+Host: www.flipkart.com
+sec-ch-ua: " Not;A Brand";v="99", "Google Chrome";v="97", "Chromium";v="97"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Linux"
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: none
+Sec-Fetch-User: ?1
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36
+
+
+Response Headers
+	Access-Control-Allow-Credentials: true
+Access-Control-Allow-Origin: https://www.flipkart.com
+Content-Length: 0
+Content-Type: application/json
+Date: Tue, 18 Jan 2022 11:41:46 GMT
+Server: nginx
+x-e-id: 10.34.161.162
+
+Response cookies
+	Content-Encoding: gzip
+Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-eval' https://*.flixcart.com https://*.flixcart.net https://flipkart.d1.sc.omtrdc.net https://dpm.demdex.net https://tnc.phonepe.com 'nonce-4608346687649637217'; style-src 'self' 'unsafe-inline' https://*.flixcart.com https://tnc.phonepe.com https://*.flixcart.net; img-src 'self' data: blob: https://*.flixcart.com https://*.flixcart.net https://images.ixigo.com https://flipkart.d1.sc.omtrdc.net https://www.facebook.com https://*.fkapi.net https://googleads.g.doubleclick.net https://www.google.com https://www.google.co.in https://www.googleadservices.com https://sp.analytics.yahoo.com https://bat.bing.com https://bat.r.msn.com https://pay.payzippy.com https://1.pay.payzippy.com https://tnc.phonepe.com; font-src 'self' data: https://*.flixcart.com https://tnc.phonepe.com https://*.flixcart.net; frame-src 'self' https://*.flipkart.com http://*.flipkart.com https://*.youtube.com https://youtube.com https://*.vimeo.com https://pay.payzippy.com https://1.pay.payzippy.com https://tnc.phonepe.com https://cdemux.appspot.com 'nonce-4608346687649637217'; worker-src 'self' https://*.flipkart.com blob:; child-src 'self' https://*.flipkart.com 'nonce-4608346687649637217'; connect-src 'self' *; object-src 'none'; base-uri 'self'; report-uri https://sentry.flipkart.com/api/69/security/?sentry_key=8c5053b8efc541dca3d22ce55f00a82e&sentry_release=4.69.0
+Content-Type: text/html; charset=utf-8
+Date: Tue, 18 Jan 2022 12:12:24 GMT
+Server: nginx
+Set-Cookie: T=TI164250497879600186547406138754094970470962692633918741961483690522; Max-Age=31536000; Domain=flipkart.com; Path=/; Expires=Wed, 18 Jan 2023 12:12:23 GMT; Secure; SameSite=None
+Set-Cookie: T=TI164250497879600186547406138754094970470962692633918741961483690522; Max-Age=31536000; Domain=flipkart.net; Path=/; Expires=Wed, 18 Jan 2023 12:12:23 GMT; Secure; SameSite=None
+Set-Cookie: SN=VID3BEF834E4BB46AF880D8E45AB7005AF.TOK9810E0E4D1C84F25879B06B8680D7042.1642507943.LO; Max-Age=15778476; Domain=flipkart.com; Path=/; Expires=Wed, 20 Jul 2022 03:07:00 GMT; HttpOnly
+Transfer-Encoding: chunked
+X-Content-Type-Options: nosniff
+x-e-id: 10.33.7.167
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+
+
+Request method type
+	Request Method: GET
+
+Response status code
+	Status Code: 200 OK
+
+
+
+
+
+
+
+
+
+
+
