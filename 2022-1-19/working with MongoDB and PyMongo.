@@ -1,0 +1,70 @@
+working with MongoDB and PyMongo.
+
+
+sudo systemctl restart mongod
+
+Prerequisites
+import pymongo
+Making a Connection with MongoClient
+
+>>> from pymongo import MongoClient
+>>> client = MongoClient()
+>>> client = MongoClient('localhost', 27017)
+>>> client = MongoClient('mongodb://localhost:27017/')
+
+Getting a Database
+>>> db = client.test_database
+>>> db = client['test-database']
+
+Getting a Collection
+>>> collection = db.test_collection
+>>> collection = db['test-collection']
+
+Documents
+	>>> import datetime
+>>> post = {"author": "Mike",
+...         "text": "My first blog post!",
+...         "tags": ["mongodb", "python", "pymongo"],
+...         "date": datetime.datetime.utcnow()}
+
+Inserting a Document
+>>> posts = db.posts
+>>> post_id = posts.insert_one(post).inserted_id
+>>> post_id
+ObjectId('61e7d39f36dc480dd7f5bac1')
+>>> db.list_collection_names()
+['posts']
+
+Getting a Single Document With find_one()
+>>> import pprint
+>>> pprint.pprint(posts.find_one())
+
+	{'_id': ObjectId('61e7d1a4fbd8f958c7d27372'),
+ 'author': 'Mike',
+ 'date': datetime.datetime(2022, 1, 19, 8, 53, 37, 65000),
+ 'tags': ['mongodb', 'python', 'pymongo'],
+ 'text': 'My first blog post!'}
+
+Querying By ObjectId
+ post_id
+	ObjectId('61e7d39f36dc480dd7f5bac1')
+>>> 
+>>> pprint.pprint(posts.find_one({"_id": post_id}))
+{'_id': ObjectId('61e7d39f36dc480dd7f5bac1'),
+ 'author': 'Mike',
+ 'date': datetime.datetime(2022, 1, 19, 9, 2, 4, 862000),
+ 'tags': ['mongodb', 'python', 'pymongo'],
+ 'text': 'My first blog post!'}
+
+ Counting
+
+ >>> posts.count_documents({})
+4
+
+for specific query
+
+>>> posts.count_documents({"author": "Mike"})
+3
+
+
+

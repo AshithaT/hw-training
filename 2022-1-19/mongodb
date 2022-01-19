@@ -1,0 +1,61 @@
+mongodb
+
+curl -fsSL https://www.mongodb.org/static/pgp/server-4.4.asc | sudo apt-key add -
+
+apt-key list
+
+echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/4.4 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.4.list
+
+
+sudo apt update
+
+sudo apt install mongodb-org
+
+Starting the MongoDB Service and Testing the Database
+
+	sudo systemctl start mongod.service
+	sudo systemctl status mongod
+	sudo systemctl enable mongod
+
+	mongo --eval 'db.runCommand({ connectionStatus: 1 })'
+
+Managing the MongoDB Service
+
+checks the status of the MongoDB service:
+
+	sudo systemctl status mongod
+
+You can stop the service anytime by typing:
+
+	sudo systemctl stop mongod
+	
+To start the service when it’s stopped, run:
+
+	sudo systemctl start mongod
+
+You can also restart the server when it’s already running:
+
+	sudo systemctl restart mongod
+
+disable this automatic startup, type:
+
+	sudo systemctl disable mongod
+
+run the enable command again:
+
+	sudo systemctl enable mongod
+
+
+Installing / Upgrading
+PyMongo is in the Python Package Index.
+
+Installing with pip
+We recommend using pip to install pymongo on all platforms:
+
+	$ python3 -m pip install pymongo
+To get a specific version of pymongo:
+
+	$ python3 -m pip install pymongo==3.5.1
+To upgrade using pip:
+
+	$ python3 -m pip install --upgrade pymongo

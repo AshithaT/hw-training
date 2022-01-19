@@ -1,0 +1,46 @@
+NoSQL vs SQL Databases
+
+	NoSQL (“non SQL” or “not only SQL”) databases were developed in the late 2000s with a focus on scaling, fast queries, allowing for frequent application changes, and making programming simpler for developers.
+
+NoSQL databases have flexible data models, scale horizontally, have incredibly fast queries, and are easy for developers to work with.
+
+Understanding Differences in the Four Types of NoSQL Databases
+
+Here are the four main types of NoSQL databases:
+
+	Document databases
+	Key-value stores
+	Column-oriented databases
+	Graph databases
+
+Document databases
+A document database stores data in JSON, BSON , or XML documents (not Word documents or Google docs, of course).In a document database, documents can be nested.	
+
+Key-Value Stores
+The simplest type of NoSQL database is a key-value store . Every data element in the database is stored as a key value pair consisting of an attribute name (or "key") and a value. 
+
+Column-Oriented Databases
+While a relational database stores data in rows and reads data row by row, a column store is organized as a set of columns. 
+
+Graph Databases
+
+A graph database focuses on the relationship between data elements. Each element is stored as a node (such as a person in a social media graph). The connections between elements are called links or relationships. 
+
+ACID transactions 
+
+ACID transactions guarantee that a database will be in a consistent state after running a group of operations. Most databases offer transactional guarantees for operations that impact a single record. 
+What are ACID transactions?
+A transaction is a group of database read and write operations that only succeeds if all the operations within succeed. Transactions can impact a single record or multiple records.
+
+What are the ACID properties of a transaction?
+    Atomicity
+Atomicity guarantees that all of the commands that make up a transaction are treated as a single unit and either succeed or fail together.
+
+Consistency
+Consistency guarantees that changes made within a transaction are consistent with database constraints.
+
+Isolation
+Isolation guarantees that concurrent transactions do not affect each other’s outcomes.
+
+Durability
+Durability guarantees that, once the database has told the client it has written the data, the data has in fact been written to a backing store. The data will persist even in the case of a system failure.

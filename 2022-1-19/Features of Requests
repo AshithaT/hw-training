@@ -1,0 +1,22 @@
+Features of Requests
+
+Request
+	Passing of parameters and handling the request type like GET, POST, PUT, DELETE, etc. is very easy.
+
+Response
+	You can get the response in the format you need and the supported ones are text format, binary response, json response, and raw response.
+
+Response
+	You can get the response in the format you need and the supported ones are text format, binary response, json response, and raw response.
+
+Headers
+	The library allows you to read, update or send new headers as per your requirements.
+
+Error handling
+	The requests module gives support for error handling and some of which are Connection Error, Timeout errors, TooManyRedirects, Response.raise_for_status errors, etc.
+
+Cookies
+	The library allows you to read, write and update for the requested URL.
+
+Sessions
+	To maintain the data, you require between requests you need sessions.
