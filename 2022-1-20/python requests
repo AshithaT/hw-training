@@ -1,0 +1,19 @@
+Three approaches for web scraping
+
+	HTTP Requests
+	Selenium
+	Scrapy
+
+What is HTTP?
+HTTP is a set of protocols designed to enable communication between clients and servers. 
+
+there are mainly two methods:
+
+GET : to request data from the server.
+POST : to submit data to be processed to the server.
+
+post() 
+requests.post(url, params={key: value}, args)
+
+get()
+requests.get(url, params={key: value}, args)
