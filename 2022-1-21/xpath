@@ -1,0 +1,62 @@
+xpath
+
+	response.xpath('//a[@title="Dubai Floor plans"]/@href').extract()                                                       
+Out[7]: ['/floorplans/dubai/']
+
+a=response.xpath('//*[count(a)=1]') 
+
+a=response.xpath('//*[name()="title"]')                      
+
+In [34]: a                                                            
+Out[34]: [<Selector xpath='//*[name()="title"]' data='<title>Floor plans for apartments and...'>]
+
+a=response.xpath('//*[string-length(name())=3]')             
+
+In [36]: a                                                            
+Out[36]: 
+[<Selector xpath='//*[string-length(name())=3]' data='<div id="body-wrapper" class="ce5b426...'>,
+ <Selector xpath='//*[string-length(name())=3]' data='<div><div aria-label="Profile and set...'>,
+
+  a=response.xpath('//a|//h1')                                       
+
+In [38]: a                                                                  
+Out[38]: 
+[<Selector xpath='//a|//h1' data='<a title="UAE" class="dropdown__trigg...'>
+
+ a=response.xpath('//div/span|//a')                                 
+
+In [40]: a                                                                  
+Out[40]: 
+[<Selector xpath='//div/span|//a' data='<a title="UAE" class="dropdown__trigg...'>,
+
+
+       a=response.xpath('//div/following::*')                         
+
+In [52]: a                                                              
+Out[52]: 
+[<Selector xpath='//div/following::*' data='<a href="/ar/floorplans/" style="min-...'>,
+
+a=response.xpath('//div/preceding::*')                         
+
+In [54]: a                                                              
+Out[54]: 
+[<Selector xpath='//div/preceding::*' data='<head><meta charset="UTF-8"><meta nam...'>,
+
+a=response.xpath('//div/self::*')                              
+
+In [57]: a                                                              
+Out[57]: 
+[<Selector xpath='//div/self::*' data='<div id="body-wrapper" class="ce5b426...'>,
+
+a=response.xpath('//div/ancestor::*|div/descendant::*|//div/fol
+    ...: lowing::*|//div/preceding::*|//div/self::*')                   
+
+In [59]: a                                                              
+Out[59]: 
+[<Selector xpath='//div/ancestor::*|div/descendant::*|//div/following::*|//div/preceding::*|//div/self::*' data='<html lang="en" dir="ltr" itemscope="...'>,
+
+a=response.xpath('//div[position()mod2=0]')                    
+
+In [61]: a                                                              
+Out[61]: 
+[<Selector xpath='//div[position()mod2=0]' data='<div class="dropdown "><a title="Site...'>,
