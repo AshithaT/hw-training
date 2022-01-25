@@ -1,0 +1,21 @@
+vars() function in Python
+
+vars(object)
+
+class Geeks:
+  def __init__(self, name1 = "Arun", num2 = 46, name3 = "Rishab"):
+    self.name1 = name1
+    self.num2 = num2
+    self.name3 = name3
+    
+GeeksforGeeks = Geeks()
+print(vars(GeeksforGeeks))
+
+Using Python Libraries for Web Scraping
+
+Selenium: This is a web testing library used to automate browser activity.
+
+Beautiful Soup: This is a library used for parsing HTML and XML documents. This library creates “parse trees,” allowing for easy data extraction.
+
+Pandas: This is a library used for data manipulation and analysis. This library extracts and stores the data in your preferred format.
+

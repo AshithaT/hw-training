@@ -1,0 +1,25 @@
+Session Objects
+
+	The Session object allows you to persist certain parameters across requests. It also persists cookies across all requests made from the Session instance.
+
+	A Session object has all the methods of the main Requests API.
+
+Request and Response Objects
+
+	Whenever a call is made to requests.get() and friends, you are doing two major things. 
+
+	First, you are constructing a Request object which will be sent off to a server to request or query some resource.
+
+    Second, a Response object is generated once Requests gets a response back from the server.
+
+		>>> import requests
+		>>> r = requests.get('https://www.bayut.com/to-rent/property/dubai/')
+		>>> r.headers
+               {
+               	headers:   ..............  ..........
+               }
+
+
+		>>>r.request.headers
+
+		{'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'}

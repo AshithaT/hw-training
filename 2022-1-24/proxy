@@ -1,0 +1,16 @@
+
+Proxies
+
+If you need to use a proxy, you can configure individual requests with the proxies argument to any request method
+
+# import requests
+# proxies = {'http': 'http://10.11.4.254:3128'}
+# s = requests.session()
+# s.proxies.update(proxies)
+# s.get("https://www.bayut.com/to-rent/property/dubai/") 
+
+SOCKS
+
+In addition to basic HTTP proxies, Requests also supports proxies using the SOCKS protocol. 
+
+	python -m pip install requests[socks]
