@@ -1,0 +1,27 @@
+[import and export json file]
+
+mongoimport --jsonArray --db YourDatabase --collection YourCollection --file Yourfile.json
+
+
+mongoimport --db demo --collection result --type=json --file firstweber_2022_01_03.json
+
+
+mongoexport --db demo --collection result --type=json --out s.json
+then file come with extra field _id so inorder to 
+
+mongoexport --db demo --collection result | sed '/"_id":/s/"_id":[^,]*,//' > v.json
+
+
+import and export csv file
+
+mongoimport --db newcsv --collection results --headerline --type=csv --file instagram_2022_01_211.csv
+
+mongoexport --db newcsv --collection results --fields product_id,catalog_name --type=csv --out c.csv
+
+In mongo shell 
+
+> use newcsv
+switched to db newcsv
+
+> show collections
+results
