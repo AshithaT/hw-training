@@ -1,0 +1,27 @@
+The use Command
+
+	MongoDB use DATABASE_NAME is used to create database.
+
+syntax
+
+use DATABASE_NAME
+
+The dropDatabase() Method
+
+MongoDB db.dropDatabase() command is used to drop a existing database.
+
+	db.dropDatabase()
+
+The createCollection() Method
+
+	db.createCollection(name, options) is used to create collection.
+
+Schema
+
+	Select your desired collection and click the Schema tab.
+	Click Analyze Schema.
+
+
+Validation Tab
+	The Validation tab allows you to manage schema validation rules for a collection.
+

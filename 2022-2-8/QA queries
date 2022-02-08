@@ -1,0 +1,23 @@
+compass QA queries
+
+to check whether same
+
+ 	{$where: "this.product_id!=this.catalog_id"}
+
+for image using regex
+
+	{image_url:{$regex:/https?:\/\/.*\.(?:jpeg)/}}
+
+to check N/A
+
+	{ category_hierarchy : { $eq : "N/A" } }
+
+type
+	{number_of_ratings : { $type :"int" } }
+
+Boolean
+
+	{is_sold_out: {$in: [ 'true', 'false']}
+	
+email
+	  {email: RegExp('@gmail.com$', 'i')}
