@@ -2,8 +2,8 @@ import json
 import re
 error_log = []
 # url=''
-# file = input('Enter the input file :')
-with open("firstweber_2022_01_03.json", 'r') as myfile:
+file = input('Enter the input file :')
+with open(file, 'r') as myfile:
     file_data = myfile.read()
 
     if 'null' in file_data:
