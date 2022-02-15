@@ -110,5 +110,9 @@ lower=int(input("enter the lower and upperlimit :"))
 upper=int(input())
 if lower<=line_number+1<=upper:
     print("line number matched")
+    
 else:
     print("count unmatched")
+
+with open("file.json", "w") as write_file:
+    json.dump(error_log, write_file)
