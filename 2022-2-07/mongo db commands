@@ -3,6 +3,7 @@
 mongoimport --jsonArray --db YourDatabase --collection YourCollection --file Yourfile.json
 
 
+
 mongoimport --db demo --collection result --type=json --file firstweber_2022_01_03.json
 
 
