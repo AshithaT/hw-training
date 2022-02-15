@@ -7,7 +7,7 @@ mongoimport --db demo --collection result --type=json --file firstweber_2022_01_
 
 
 mongoexport --db demo --collection result --type=json --out s.json
-then file come with extra field _id so inorder to 
+then file come with extra field _id so inorder to change
 
 mongoexport --db demo --collection result | sed '/"_id":/s/"_id":[^,]*,//' > v.json
 
@@ -25,3 +25,6 @@ switched to db newcsv
 
 > show collections
 results
+
+
+
