@@ -36,7 +36,7 @@ MONGO_URI = 'mongodb://localhost:27017'  # local
 
 MONGO_DB = dbname
 MONGO_COLLECTION = 'sakneen_data'
-
+MONGO_COLLECTION_URL='sakneen_url'
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
 
@@ -60,16 +60,16 @@ MONGO_COLLECTION = 'sakneen_data'
 #   'Accept-Language': 'en',
 #}
 
-SPIDER_MIDDLEWARES = {
-   'sakneen.middlewares.SakneenSpiderMiddleware': 543,
-}
+# SPIDER_MIDDLEWARES = {
+#    'sakneen.middlewares.SakneenSpiderMiddleware': 543,
+# }
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
-DOWNLOADER_MIDDLEWARES = {
-    'sakneen.middlewares.SakneenDownloaderMiddleware': 543,
+# DOWNLOADER_MIDDLEWARES = {
+#     'sakneen.middlewares.SakneenDownloaderMiddleware': 543,
 
-}
+# }
 
 # Enable or disable extensions
 # See https://docs.scrapy.org/en/latest/topics/extensions.html
