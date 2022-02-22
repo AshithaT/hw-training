@@ -25,7 +25,7 @@ headers = {'accept': '*/*',
 
 class sakneen_Spider(scrapy.Spider):
     # db = MongoClient('mongodb://localhost:27017')[dbname]
-    name = 'sakneen'
+    name = 'sakneen_crawler'
     allowed_domains = ['sakneen.com']
 
     def start_requests(self):

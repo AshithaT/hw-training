@@ -43,6 +43,5 @@ class SakneenPipeline:
             except:
                 raise DropItem("Dropping duplicate item")
 
-    
         return item
        
