@@ -56,10 +56,5 @@ class sakneen_Spider(scrapy.Spider):
         if meta['page']<= 34:
             yield FormRequest(url=url,method="POST",callback=self.parse_search, meta=meta,body=json.dumps(payload),headers=headers)
     
-    def parse_data(self,response):
-       urls={"url":"https://www.sakneen.com/en/house/duplex-for-sale-greater-cairo-cairo-maadi-sarayat-al-maadi-port-said-st.--75558460eaad41358380a5314df58923",
-            "api_url":"https://app.sakneen.com/apis/marketplace/listings/slug/" + str(slug)}
-        for url in urls:
-            yield scrapy.Request(url=url, callback=self.parse_search)
-        v=json.loads(response.text)
+    
         

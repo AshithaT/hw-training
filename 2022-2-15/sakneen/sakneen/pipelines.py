@@ -39,8 +39,10 @@ class SakneenPipeline:
 
         if isinstance(item, SakneenItem):
             try:
-                self.db[self.mongo_collection_url].insert_one(dict(item))
+                self.db[self.mongo_collection].insert_one(dict(item))
             except:
                 raise DropItem("Dropping duplicate item")
-        return item
 
+    
+        return item
+       
